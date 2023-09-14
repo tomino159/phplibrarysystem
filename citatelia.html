@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aplikácia na správu knižnice | Zoznam čitateľov</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="shortcut icon" href="/assets/images/logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <h1 id="hlavny_nadpis">Zoznam čitateľov</h1>
+    <div class="menu-container">
+        <div class="menu">
+            <a href="index.html">Knihy</a>
+            <a href="citatelia.html">Čitatelia</a>
+            <a href="vypozicky.html">Výpožičky</a>
+        </div>
+    </div>
+    <form id="reader-form" method="POST" action="pridavanie_citatelov.php">
+        <h2>Spravovanie zoznamu čitateľov</h2>
+        <input type="text" id="first_name" name="meno" placeholder="Meno" required><br>
+        <input type="text" id="last_name" name="priezvisko" placeholder="Priezvisko" required><br>
+        <input type="text" id="card_number" name="cislo_op" placeholder="Číslo vášho OP" required><br>
+        <input type="text" id="birth_date" name="datum_narodenia" placeholder="Dátum narodenia" required><br>
+        <button id="pridanie_cita"	type="submit">Pridať čitateľa</button>
+    </form>
+    <br>
+    <br>
+    <form id="zobraz-vsetko" method="POST" action="zobraz_vsetkych.php">
+        <input id="zobraz_vsetkych" type="submit" value="Zobraziť čitateľov" name="zobraz-vsetkych">
+    </form>
+
+    <form id="remove-form" action="odobrat_citatela.php" method="POST">
+        <input type="text" id="id" name="id" placeholder="Zadajte ID čitateľa" required><br>
+        <button id="odobranie_cita" name="odobranie-cita" type="submit">Odobrať čitateľa</button>
+    </form>
+
+    <ul id="reader-list"></ul>
+
+    <!-- <script src="/features/script.js"></script> -->
+</body>
+
+</html>

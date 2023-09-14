@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aplikácia na správu knižnice | Zoznam výpožičiek</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="shortcut icon" href="/assets/images/logo.jpg" type="image/x-icon">
+</head>
+    <h1 id="hlavny_nadpis">Zoznam výpožičiek</h1>
+    <div class="menu-container">
+        <div class="menu">
+            <a href="index.html">Knihy</a>
+            <a href="citatelia.html">Čitatelia</a>
+            <a href="vypozicky.html">Výpožičky</a>
+        </div>
+    </div>
+    <h2>Vypožičanie knihy</h2>
+    <form action="vypozicat_knihu.php" method="POST">
+        <label for="id_citatel">ID čitateľa:</label>
+        <input type="text" id="id_citatel" name="id_citatel">
+        <label for="id_kniha">ID knihy:</label>
+        <input type="text" id="id_kniha" name="id_kniha">
+        <input type="submit" name="vypozicka" value="Vypožičať knihu">
+    </form>
+    
+    <h2>Vrátenie knihy</h2>
+    <form action="vratit_knihu.php" method="POST">
+        <label for="id">ID výpožičky:</label>
+        <input type="text" id="id" name="id">
+        <input type="submit" name="vratenie" value="Vrátiť knihu">
+    </form>
+
+    <h2>Zobraziť čitateľa knihy</h2>
+    <form action="zobraz_citatela.php" method="GET">
+        <label for="id_kniha">ID knihy:</label>
+        <input type="text" id="id_kniha" name="id_kniha" required>
+        <input type="submit" name="zobraz_cita" value="Zobraziť čitateľa">
+    </form>
+
+   <!--<script src="/features/script.js"></script> -->
+</body>
+
+</html>

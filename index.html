@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="library, system, application, web-application, library management system, library system">
+    <meta name="author" content="Tomas">
+    <title>Aplikácia na správu knižnice</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="shortcut icon" href="/assets/images/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <h1 id="hlavny_nadpis">Aplikácia na správu knižnice</h1>
+    <div class="menu-container">
+        <div class="menu">
+            <a href="index.html">Knihy</a>
+            <a href="citatelia.html">Čitatelia</a>
+            <a href="vypozicky.html">Výpožičky</a>
+        </div>
+    </div>
+    <form id="book-form" method="POST" action="ulozknihy.php">
+        <h2>Pridanie a odobranie knihy zo systému</h2>
+        <input type="text" id="book-title" placeholder="Názov knihy" name="book-title" required><br>
+        <input type="text" id="book-author" placeholder="Autor knihy" name="book-author" required><br>
+        <input id="btn_odoslanie" type="submit" value="Pridať knihu" name="btn-odoslanie">
+    </form>
+    <br>
+    <br>
+    <form action="zobraz_zoznam.php" method="GET">
+        <input id="btn_zoznam" type="submit" value="Zobraziť knihy" name="btn-zoznam">
+    </form>
+    <form action="odobrat_knihy.php" method="POST">
+        <input type="text" id="book_id" placeholder="ID Knihy" name="book_id"><br>
+        <input id="btn_odobranie" type="submit" value="Odobrať knihu" name="btn-odobranie">
+    </form>
+
+    <ul id="book-list"></ul>
+
+    <script src="/features/zoznam.js"></script>
+    <!-- <script src="/features/script.js"></script> -->
+</body>
+</html>
