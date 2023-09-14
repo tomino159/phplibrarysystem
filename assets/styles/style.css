@@ -1,0 +1,151 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#hlavny_nadpis {
+    text-align: center;
+}
+
+#book-form {
+    padding-top: 1%;
+    display: inline-block;
+}
+
+#book-list {
+    margin: 0;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#book-list ul li {
+    text-decoration: none;
+}
+
+input[type=text] {
+    padding: 15px 30px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+#btn_odoslanie {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+}
+
+#btn_zoznam {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+#zobraz_vsetkych {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: solid;
+}
+
+#btn_odobranie {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+#reader-form {
+    padding-top: 1%;
+    padding-left: 10%;
+    display: inline-block;
+}
+
+#pridanie_cita {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#pridanie_cita:hover {
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+}
+
+#odobranie_cita {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#odobranie_cita:hover {
+    background-color: pink;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+}
+
+#reader-list {
+    display: inline-block;
+}
+
+.menu-container {   
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ff9900;
+}
+
+.img1 {
+    width:auto;
+    text-align:center;
+    padding:20px;
+}
+
+#img_1 {
+    width: auto;
+    padding: 20px;
+    height: 250px;
+    
+
+    padding-left: 50px;
+    transform: translateX(50px);
+}
